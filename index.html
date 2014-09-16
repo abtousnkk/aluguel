@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<title>Busca Lar</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+<!-- Folhas de estilos - css -->
+<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+
+</head>
+<body>
+
+<!-- Nav / Menu -->
+<nav class="menu">
+    <div class="menu-container">
+        <div class="menu-user-container">
+            <div class="menu-user-login">
+                <span>brunno.romero@virafolha.com.br</span>
+                <div>Brunno Romero</div>
+                <a href="" class="menu-user-button">SAIR</a>
+                <a href="" class="menu-user-button">EDITAR</a>
+            </div>
+        </div>
+        <ul class="menu-list">
+            <li class="menu-list-item"><img src="img/icone-menu-buscar.png" class="men-list-icon" alt="Buscar"/><a href="#">Buscar imóveis</a></li>
+            <li class="menu-list-item"><img src="img/icone-menu-cadastro.png" class="men-list-icon" alt="Buscar"/><a href="#">Cadastrar imóveis</a></li>
+            <li class="menu-list-item"><img src="img/icone-menu-imoveis.png" class="men-list-icon" alt="Buscar"/><a href="#">Meus imóveis</a></li>
+            <li class="menu-list-item"><img src="img/icone-menu-favoritos.png" class="men-list-icon" alt="Buscar"/><a href="#">Meus favoritos</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- Fim Nava / Menu -->
+
+<div class="corpo">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-bt" id="menubt">
+        	<div class="menu-bt"></div>
+        </div>
+            <div class="busca-campo-container">
+                <input type="text" class="busca-input" name="" value="" placeholder="" />
+                <div class="busca-bt"><img src="img/icone_busca.png" alt="Buscar" /></div>
+                <div class="busca-bt filtro-bt"><img src="img/icone_filtro.png" alt="Filtros" /></div>
+            </div>
+        <div class="header-bt">
+        	<img src="img/icone_mapa.png" class="menu-bt-map" alt="mapa" />
+        </div>
+    </header>
+    <!-- Fim Header -->
+    
+    <!-- Main -->
+    <main role="main">
+    	<div class="main-head">DADOS PARA LOCALIZAÇÃO</div>
+        <div class="main-content shadow-bot">
+            <form>
+                <ul class="form-list">
+                    <li class="form-list-item">
+                        <select class="form-input">
+                        	<option></option>
+                            <option>Apartamento</option>
+                            <option>Casa</option>
+                            <option>Comercial</option>
+                        </select>
+                        <label class="form-label">Tipo:</label>
+                    </li>
+                    <li class="form-list-item">
+                        <input type="text" class="form-input" name="" />
+                        <label class="form-label">Nome do condomínio:</label>
+                    </li>
+                    <li class="form-list-item-2">
+                        <select class="form-input">
+                        	<option></option>
+                            <option>SP</option>
+                            <option>MG</option>
+                        </select>
+                        <label class="form-label">Estado:</label>
+                    </li>
+                    <li class="form-list-item-2 form-margin">
+                        <select class="form-input">
+                        	<option></option>
+                            <option>Uberlândia</option>
+                            <option>Uberaba</option>
+                        </select>
+                        <label class="form-label">Cidade:</label>
+                    </li>
+                    <li class="form-list-item">
+                        <input type="text" class="form-input" name="teste1" value="" required id="getendereco" />
+                        <label class="form-label">Lograouro:</label>
+                        <div class="form-icon-action" id="getend"><img src="img/icone_mapa_cinza.png" alt="Localização Atual" /></div>
+                    </li>
+                    <li class="form-list-item-2">
+                        <input type="text" class="form-input" name="teste1" value="" required id="getendereco" />
+                        <label class="form-label">Bairro:</label>
+                    </li>
+                    <li class="form-list-item-2 form-margin">
+                        <input type="number" class="form-input" name="teste1" value="" required id="getendereco" />
+                        <label class="form-label">CEP:</label>
+                    </li>
+                    <li class="form-list-item">
+                       
+                        <textarea class="form-input form-textarea" name="teste"></textarea>
+                        <label class="form-label">Descrição:</label>
+                    </li>
+                    
+                </ul>
+            </form>
+        </div>
+        
+        <div class="main-head">DADOS DO EMPREENDIMENTO</div>
+        <form>
+        <div class="main-content">
+                <ul class="form-list">
+                    <li class="form-list-item-2">
+                        <input type="number" class="form-input" name="" />
+                        <label class="form-label">Valor:</label>
+                    </li>
+                    <li class="form-list-item-2 form-margin">
+                        <select class="form-input">
+                        	<option></option>
+                            <option>Venda</option>
+                            <option>Aluguel</option>
+                        </select>
+                        <label class="form-label">Finalidade:</label>
+                    </li>
+                    <li class="form-list-item-2">
+                        <input type="number" class="form-input" name="" />
+                        <label class="form-label">Área:</label>
+                    </li>
+                    <li class="form-list-item-2 form-margin">
+                        <select class="form-input">
+                        	<option></option>
+                            <option>Planta</option>
+                            <option>Novo</option>
+                            <option>Usado</option>
+                        </select>
+                        <label class="form-label">Construção:</label>
+                    </li>
+                </ul>    
+                    <!-- Lista -->
+                    <ul>
+                        <li class="form-list-check">
+                            <div class="icone-circle"></div>
+                            Dormitórios
+                            <label class="form-check"><input type="checkbox" /><span class="span-check">1</span></label>
+                            <label class="form-check"><input type="checkbox" /><span class="span-check">2</span></label>
+                            <label class="form-check"><input type="checkbox" /><span class="span-check">3</span></label>
+                            <label class="form-check"><input type="checkbox" /><span class="span-check">4</span></label>
+                        </li>
+                        <li class="form-list-check">
+                            <div class="icone-circle"></div>
+                            Vagas
+                            <label class="form-check"><input type="checkbox" /><span class="span-check">1</span></label>
+                            <label class="form-check"><input type="checkbox" /><span class="span-check">2</span></label>
+                            <label class="form-check"><input type="checkbox" /><span class="span-check">3</span></label>
+                            <label class="form-check"><input type="checkbox" /><span class="span-check">4</span></label>
+                        </li>
+                    </ul>
+                    <!-- Fim Lista -->
+                    <li class="form-list-check icone-add">
+                    	<div class="icone-circle icone-circle-verde icone-circle-add"></div>
+                        Adicionar item
+                    </li>
+                    
+                    <li class="form-list-item form-list-picture">
+                        <input type="file" accept="image/*" class="form-input form-input-picture" />
+                        <input type="file" accept="image/*" class="form-input form-input-picture" />
+                        <input type="file" accept="image/*" class="form-input form-input-picture" />
+                        <input type="file" accept="image/*" class="form-input form-input-picture" />                  
+                    </li>
+                    
+                    <li class="form-list-item">
+                        <div class="form-bt-pre">PRÉ-VISUALIZAR</div>
+                        <div class="form-bt-cancel">CANCELAR</div>
+                    </li>
+                </ul>
+        </div>
+        	<input type="button" class="formt-bt-confirm" value="CADASTRAR" />
+        </form>
+    </main>
+    <!-- Fim Main -->   
+</div>
+<!-- Scripts -->
+<script type='text/javascript' src='js/jquery-1.9.1.min.js'></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script type='text/javascript' src='js/main.js'></script>
+</body>
+</html>
